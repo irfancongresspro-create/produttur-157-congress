@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { createServerSupabaseClient } from '@/lib/supabase/server'
+import { createClient } from '@/lib/supabase/server'
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
@@ -13,7 +13,7 @@ export async function GET(request: Request) {
   }
 
   const offset = (page - 1) * limit
-  const supabase = createServerSupabaseClient()
+  const supabase = await createClient()
 
   try {
     const { data, count, error } = await supabase
