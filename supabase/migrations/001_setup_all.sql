@@ -639,41 +639,7 @@ BEGIN
   LIMIT p_limit;
 END;
 $$;
--- 012_ip_limits_and_roles.sql
 
--- 1. Update the user_roles table to accept 'search-user'
-DO $$
-DECLARE
-    const_name text;
-BEGIN
-    -- Find the check constraint on the role column
-    SELECT constraint_name INTO const_name
-    FROM information_schema.table_constraints
-    WHERE table_schema = 'public' 
-      AND table_name = 'user_roles' 
-      AND constraint_type = 'CHECK';
-    
-    IF const_name IS NOT NULL THEN
-        EXECUTE 'ALTER TABLE public.user_roles DROP CONSTRAINT ' || const_name;
-    END IF;
-END $$;
-
-ALTER TABLE public.user_roles ADD CONSTRAINT user_roles_role_check CHECK (role IN ('admin', 'super-admin', 'search-user'));
-
--- 2. Create the ip_search_limits table
-CREATE TABLE IF NOT EXISTS public.ip_search_limits (
-  ip_address text PRIMARY KEY,
-  search_count integer DEFAULT 0,
-  created_at timestamp with time zone DEFAULT timezone('utc'::text, now()) NOT NULL,
-  updated_at timestamp with time zone DEFAULT timezone('utc'::text, now()) NOT NULL
-);
-
--- 3. Secure the table
-ALTER TABLE public.ip_search_limits ENABLE ROW LEVEL SECURITY;
-
--- Deny all by default for anon/authenticated.
--- Service role bypasses RLS automatically, but we can add a policy just in case.
-CREATE POLICY "Deny public access" ON public.ip_search_limits FOR ALL USING (false);
 -- Phase 1: Typo Tolerance using pg_trgm
 
 -- 1. Enable the extension
