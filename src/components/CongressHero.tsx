@@ -156,8 +156,8 @@ export function CongressHero() {
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
             <PoliticianCard
               src="/photos/local-politician.jpg"
-              name="Congress Candidate"
-              nameTelugu="కాంగ్రెస్ అభ్యర్థి"
+              name="Shaik Irfan Basha"
+              nameTelugu="షేక్ ఇర్ఫాన్ బాషా"
               title="Produttur 157 Candidate"
               isCenter
               fallbackColor="#138808"
