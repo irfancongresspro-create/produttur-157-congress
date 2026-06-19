@@ -68,10 +68,10 @@ function CongressTopNav() {
             </div>
             <div>
               <div style={{ fontWeight: 800, fontSize: 15, color: '#FF9933', letterSpacing: '-0.3px' }}>
-                Congress Voter Search
+                Produttur Voter Search
               </div>
               <div style={{ fontSize: 11, color: '#64748b', marginTop: 1 }}>
-                ప్రొద్దుటూరు 157 నియోజకవర్గం
+                INC Official Directory
               </div>
             </div>
           </a>
@@ -140,7 +140,7 @@ function CongressFooter() {
         <div style={{ height: 1, background: 'rgba(255,153,51,0.1)', margin: '16px 0' }} />
 
         <p style={{ fontSize: 11, color: '#475569', lineHeight: 1.6 }}>
-          <strong style={{ color: '#64748b' }}>Legal Disclaimer:</strong> All voter data indexed on this platform is extracted via AI (OCR) from publicly available historical electoral rolls published by the Government of India. This platform is NOT affiliated with or endorsed by the Election Commission of India. Data accuracy is not guaranteed — please verify at{' '}
+          <strong style={{ color: '#64748b' }}>Legal Disclaimer:</strong> All voter data indexed on this platform is extracted via AI (OCR) from the publicly available 2024 Electoral Rolls published by the Government of India. This platform is NOT affiliated with or endorsed by the Election Commission of India. Data accuracy is not guaranteed — please verify at{' '}
           <a href="https://voters.eci.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: '#FF9933' }}>
             voters.eci.gov.in
           </a>.
