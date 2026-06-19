@@ -80,6 +80,7 @@ function CongressTopNav() {
           <nav style={{ display: 'flex', gap: 24, alignItems: 'center' }}>
             <NavLink href="/" label="Home" />
             <NavLink href="/search" label="Search" />
+            <NavLink href="/browse" label="Directory" />
             <a
               href="/search"
               style={{

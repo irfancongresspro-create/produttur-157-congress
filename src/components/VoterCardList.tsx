@@ -106,21 +106,38 @@ function VoterCard({ voter, onViewFamily }: { voter: Voter; onViewFamily: () => 
         <span>🔢 S.No: {voter.serial_no}</span>
       </div>
 
-      {/* Family button */}
-      <div style={{ marginTop: 12 }}>
+      {/* Family button and PDF */}
+      <div style={{ marginTop: 12, display: 'flex', gap: 8 }}>
         <button
           onClick={onViewFamily}
           style={{
-            width: '100%', padding: '10px',
+            flex: 1, padding: '10px',
             background: 'rgba(255,153,51,0.08)',
             border: '1px solid rgba(255,153,51,0.2)',
             color: '#FF9933', borderRadius: 10,
-            fontWeight: 600, fontSize: 14, cursor: 'pointer',
+            fontWeight: 600, fontSize: 13, cursor: 'pointer',
             transition: 'all 0.2s',
           }}
         >
-          👥 Family Search — Door {voter.house_no}
+          👥 Family Search
         </button>
+        {voter.source_pdf && (
+          <a
+            href={voter.source_pdf}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              padding: '10px 16px',
+              background: 'rgba(16,185,129,0.08)',
+              border: '1px solid rgba(16,185,129,0.2)',
+              color: '#10b981', borderRadius: 10,
+              fontWeight: 600, fontSize: 13, textDecoration: 'none',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+            }}
+          >
+            📄 PDF Pg {voter.page_no || '-'}
+          </a>
+        )}
       </div>
     </div>
   )

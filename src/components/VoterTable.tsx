@@ -29,6 +29,7 @@ const COLUMNS = [
   { key: 'epic_id',               label: 'EPIC ID',        width: 150, mono: true },
   { key: 'part_no',               label: 'Part',           width: 55  },
   { key: 'polling_station_name',  label: 'Polling Station',width: 140 },
+  { key: 'source_pdf',            label: 'PDF',            width: 70  },
   { key: 'actions',               label: 'Actions',        width: 120, searchOnly: true },
 ] as const
 
@@ -144,6 +145,15 @@ export function VoterTable({ voters, isLoading, showMatchType, onSort, sortBy, s
                 </td>
                 <td style={{ textAlign: 'center', color: '#FF9933' }}>{v.part_no}</td>
                 <td style={{ fontSize: 12, color: 'var(--color-text-muted)' }}>{v.polling_station_name || '—'}</td>
+                <td style={{ textAlign: 'center' }}>
+                  {v.source_pdf ? (
+                    <a href={v.source_pdf} target="_blank" rel="noopener noreferrer" className="btn-ghost"
+                       style={{ fontSize: 11, padding: '4px 8px', color: '#10b981', display: 'inline-flex', flexDirection: 'column', alignItems: 'center' }}>
+                      📄 
+                      <span style={{ fontSize: 9, opacity: 0.8 }}>Pg {v.page_no || '-'}</span>
+                    </a>
+                  ) : '—'}
+                </td>
                 {onViewFamily && (
                   <td style={{ textAlign: 'right' }}>
                     {v.house_no_normalized != null && v.part_no && isValidHouseNo(v.house_no) && (

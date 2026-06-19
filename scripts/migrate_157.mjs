@@ -112,18 +112,13 @@ async function migrateVoters() {
       .insert(batch)
 
     if (insertError) {
-      // If duplicate key error, try upsert for this batch
+      // If duplicate key error, insert row-by-row to skip duplicates
       if (insertError.code === '23505') {
-        const rowsNoEpic = batch.map(r => {
-          const { epic_id, ...rest } = r
-          return { ...rest, epic_id }
-        })
-        const { error: upsertError } = await target.from('voters').upsert(rowsNoEpic, {
-          onConflict: 'epic_id',
-          ignoreDuplicates: true
-        })
-        if (upsertError) {
-          console.error(`\nUpsert error at offset ${offset}:`, upsertError)
+        for (const row of batch) {
+          const { error: singleErr } = await target.from('voters').insert(row)
+          if (singleErr && singleErr.code !== '23505') {
+            console.error(`\nInsert error at offset ${offset} for EPIC ${row.epic_id}:`, singleErr)
+          }
         }
       } else {
         console.error(`\nInsert error at offset ${offset}:`, insertError)
