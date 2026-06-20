@@ -152,12 +152,48 @@ function CongressFooter() {
           </a>
         </div>
 
-        <p style={{ fontSize: 11, color: '#475569', lineHeight: 1.6 }}>
+        <p style={{ fontSize: 11, color: '#475569', lineHeight: 1.6, marginBottom: 24 }}>
           <strong style={{ color: '#64748b' }}>Legal Disclaimer:</strong> All voter data indexed on this platform is extracted via AI (OCR) from the publicly available 2002 Voter List (prepared for the 2026 elections). This platform is NOT affiliated with or endorsed by the Election Commission of India. Data accuracy is not guaranteed — please verify at{' '}
           <a href="https://voters.eci.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: '#FF9933' }}>
             voters.eci.gov.in
           </a>.
         </p>
+
+        {/* Developer Credit */}
+        <div style={{ 
+          borderTop: '1px solid rgba(255,255,255,0.05)', 
+          paddingTop: 16, 
+          display: 'flex', 
+          flexDirection: 'column', 
+          alignItems: 'center', 
+          gap: 4 
+        }}>
+          <span style={{ fontSize: 11, color: '#475569', textTransform: 'uppercase', letterSpacing: 1 }}>
+            Designed & Developed By
+          </span>
+          <a 
+            href="https://www.mindt.co.in" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            style={{ 
+              fontSize: 14, 
+              fontWeight: 700, 
+              color: '#94a3b8', 
+              textDecoration: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 6,
+              transition: 'color 0.2s'
+            }}
+            onMouseOver={(e) => e.currentTarget.style.color = '#f8fafc'}
+            onMouseOut={(e) => e.currentTarget.style.color = '#94a3b8'}
+          >
+            Mindt Private Limited
+          </a>
+          <span style={{ fontSize: 11, color: '#334155' }}>
+            www.mindt.co.in
+          </span>
+        </div>
       </div>
     </footer>
   )
