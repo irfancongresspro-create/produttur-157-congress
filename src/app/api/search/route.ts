@@ -38,10 +38,14 @@ export async function GET(req: NextRequest) {
 
   const part_no = searchParams.get('part_no')
     ? parseInt(searchParams.get('part_no')!, 10) : null
-  const family_house_no_normalized = searchParams.get('family_house_no_normalized')
-    ? parseFloat(searchParams.get('family_house_no_normalized')!) : null
-  const family_part_no = searchParams.get('family_part_no')
-    ? parseInt(searchParams.get('family_part_no')!, 10) : null
+  const rawFamHouseNorm = searchParams.get('family_house_no_normalized')
+  const family_house_no_normalized = rawFamHouseNorm && rawFamHouseNorm !== 'null' && rawFamHouseNorm !== 'undefined'
+    ? parseFloat(rawFamHouseNorm) : null
+
+  const rawFamPart = searchParams.get('family_part_no')
+  const family_part_no = rawFamPart && rawFamPart !== 'null' && rawFamPart !== 'undefined'
+    ? parseInt(rawFamPart, 10) : null
+
   const family_assembly_no = LOCKED_ASSEMBLY_NO  // Always 157
   const family_house_no_raw = searchParams.get('family_house_no_raw') || null
 
@@ -58,7 +62,7 @@ export async function GET(req: NextRequest) {
         .eq('part_no', family_part_no)
         .eq('assembly_no', family_assembly_no)
 
-      if (family_house_no_normalized != null) {
+      if (family_house_no_normalized != null && !Number.isNaN(family_house_no_normalized)) {
         qb = qb.eq('house_no_normalized', family_house_no_normalized)
       } else {
         qb = qb.eq('house_no', family_house_no_raw)
