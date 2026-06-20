@@ -32,6 +32,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   )
 }
 
+import { MobileNav } from '@/components/MobileNav'
+
 function CongressTopNav() {
   return (
     <header style={{
@@ -52,29 +54,32 @@ function CongressTopNav() {
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '12px 24px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
 
-          {/* Logo */}
-          <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 12 }}>
-            {/* INC Tricolor Flag */}
-            <div style={{
-              display: 'flex', flexDirection: 'column', width: 36, height: 24,
-              borderRadius: 4, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.2)',
-              boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
-            }}>
-              <div style={{ background: '#FF9933', flex: 1 }} />
-              <div style={{ background: '#ffffff', flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <div style={{ width: 10, height: 10, border: '1.5px solid #000080', borderRadius: '50%' }} />
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <MobileNav />
+            {/* Logo */}
+            <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 12 }}>
+              {/* INC Tricolor Flag */}
+              <div className="hidden sm:flex" style={{
+                flexDirection: 'column', width: 36, height: 24,
+                borderRadius: 4, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.2)',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
+              }}>
+                <div style={{ background: '#FF9933', flex: 1 }} />
+                <div style={{ background: '#ffffff', flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div style={{ width: 10, height: 10, border: '1.5px solid #000080', borderRadius: '50%' }} />
+                </div>
+                <div style={{ background: '#138808', flex: 1 }} />
               </div>
-              <div style={{ background: '#138808', flex: 1 }} />
-            </div>
-            <div>
-              <div style={{ fontWeight: 800, fontSize: 15, color: '#FF9933', letterSpacing: '-0.3px' }}>
-                Produttur Voter Search
+              <div>
+                <div style={{ fontWeight: 800, fontSize: 15, color: '#FF9933', letterSpacing: '-0.3px' }}>
+                  Produttur Voter Search
+                </div>
+                <div className="hidden sm:block" style={{ fontSize: 11, color: '#64748b', marginTop: 1 }}>
+                  INC Official Directory
+                </div>
               </div>
-              <div style={{ fontSize: 11, color: '#64748b', marginTop: 1 }}>
-                INC Official Directory
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
 
           {/* Nav links */}
           <nav style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
