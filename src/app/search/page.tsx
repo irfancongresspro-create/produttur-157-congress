@@ -66,8 +66,8 @@ function SearchPageInner() {
       params.set('assembly_no', ASSEMBLY_NO) // Always 157
       if (partNo) params.set('part_no', partNo)
       if (relName) params.set('relative_name', relName)
-      if (famHouseNormalized != null && famPart) {
-        params.set('family_house_no_normalized', famHouseNormalized.toString())
+      if ((famHouseNormalized != null || famHouseRaw) && famPart) {
+        if (famHouseNormalized != null) params.set('family_house_no_normalized', famHouseNormalized.toString())
         params.set('family_part_no', famPart.toString())
         if (famAssembly) params.set('family_assembly_no', famAssembly.toString())
         if (famHouseRaw) params.set('family_house_no_raw', famHouseRaw)

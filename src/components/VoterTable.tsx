@@ -156,7 +156,7 @@ export function VoterTable({ voters, isLoading, showMatchType, onSort, sortBy, s
                 </td>
                 {onViewFamily && (
                   <td style={{ textAlign: 'right' }}>
-                    {v.house_no_normalized != null && v.part_no && isValidHouseNo(v.house_no) && (
+                    {(v.house_no_normalized != null || v.house_no) && v.part_no && isValidHouseNo(v.house_no) && (
                       <button
                         className="btn-ghost"
                         style={{ fontSize: 11, padding: '4px 10px', color: '#FF9933', borderColor: 'rgba(255,153,51,0.3)' }}
