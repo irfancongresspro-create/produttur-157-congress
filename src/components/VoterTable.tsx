@@ -146,8 +146,8 @@ export function VoterTable({ voters, isLoading, showMatchType, onSort, sortBy, s
                 <td style={{ textAlign: 'center', color: '#FF9933' }}>{v.part_no}</td>
                 <td style={{ fontSize: 12, color: 'var(--color-text-muted)' }}>{v.polling_station_name || '—'}</td>
                 <td style={{ textAlign: 'center' }}>
-                  {(v.source_pdf || v.part_no) ? (
-                    <a href={v.source_pdf || `https://ceoaperolls.ap.gov.in/AP_Eroll_2024/Rolls/AC157/S01A157P${String(v.part_no).padStart(3, '0')}.pdf`} target="_blank" rel="noopener noreferrer" className="btn-ghost"
+                  {v.source_pdf ? (
+                    <a href={v.source_pdf} target="_blank" rel="noopener noreferrer" className="btn-ghost"
                        style={{ fontSize: 11, padding: '4px 8px', color: '#10b981', display: 'inline-flex', flexDirection: 'column', alignItems: 'center' }}>
                       📄 
                       <span style={{ fontSize: 9, opacity: 0.8 }}>{v.page_no ? `Pg ${v.page_no}` : 'View PDF'}</span>
