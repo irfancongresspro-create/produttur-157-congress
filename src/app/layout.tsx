@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import { MobileNav } from '@/components/MobileNav'
 
 export const viewport: Viewport = {
   themeColor: '#FF9933',
@@ -31,8 +32,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   )
 }
-
-import { MobileNav } from '@/components/MobileNav'
 
 function CongressTopNav() {
   return (
