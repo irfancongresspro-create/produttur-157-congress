@@ -77,22 +77,25 @@ function CongressTopNav() {
           </a>
 
           {/* Nav links */}
-          <nav style={{ display: 'flex', gap: 24, alignItems: 'center' }}>
-            <NavLink href="/" label="Home" />
-            <NavLink href="/search" label="Search" />
-            <NavLink href="/browse" label="Directory" />
+          <nav style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
+            <div className="hidden md:flex" style={{ gap: 24, alignItems: 'center' }}>
+              <NavLink href="/" label="Home" />
+              <NavLink href="/search" label="Search" />
+              <NavLink href="/browse" label="Directory" />
+            </div>
             <a
               href="/search"
               style={{
                 background: 'linear-gradient(90deg, #FF9933, #138808)',
                 color: 'white', textDecoration: 'none',
-                padding: '8px 20px', borderRadius: 100,
+                padding: '8px 16px', borderRadius: 100,
                 fontWeight: 700, fontSize: 13,
                 boxShadow: '0 2px 12px rgba(255,153,51,0.3)',
                 transition: 'all 0.2s',
+                whiteSpace: 'nowrap'
               }}
             >
-              🔍 Voter Search
+              🔍 <span className="hidden sm:inline">Voter </span>Search
             </a>
           </nav>
         </div>
