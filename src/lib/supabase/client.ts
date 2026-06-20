@@ -9,7 +9,11 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey)
 
 // Server-side only (service role – bypasses RLS)
 export function createServiceClient() {
-  return createClient(supabaseUrl, supabaseServiceKey, {
+  const keyToUse = supabaseServiceKey || supabaseAnonKey
+  if (!keyToUse) {
+    console.warn("WARNING: Supabase keys are completely missing!")
+  }
+  return createClient(supabaseUrl, keyToUse, {
     auth: { persistSession: false },
   })
 }
