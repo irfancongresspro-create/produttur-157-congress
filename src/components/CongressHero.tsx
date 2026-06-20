@@ -4,14 +4,40 @@ import Image from 'next/image'
 
 export function CongressHero() {
   return (
-    <section className="congress-hero" style={{ position: 'relative', overflow: 'hidden', padding: '48px 20px 24px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <section className="congress-hero-section" style={{ position: 'relative', overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
-      {/* Inject Keyframe Animations */}
+      {/* CSS for Animations and Mobile Responsiveness */}
       <style dangerouslySetInnerHTML={{ __html: `
-        @keyframes congressFlagFlow {
+        .congress-hero-section {
+          padding: 48px 20px 24px;
+        }
+        .banner-container {
+          width: 100%;
+          border-radius: 24px;
+          overflow: hidden;
+          box-shadow: 0 24px 64px rgba(0,0,0,0.6), 0 4px 16px rgba(0,0,0,0.3), inset 0 0 0 1px rgba(255,255,255,0.15);
+          background: #ffffff;
+          position: relative;
+          animation: subtleFloat 6s ease-in-out infinite;
+        }
+        
+        @media (max-width: 600px) {
+          .congress-hero-section {
+            padding: 24px 0px 24px; /* Remove side padding on mobile so banner stretches edge-to-edge */
+          }
+          .banner-container {
+            border-radius: 0px; /* Flat edges on mobile */
+            border-top: 1px solid rgba(255,255,255,0.15);
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            /* Disable float on mobile to prevent horizontal scroll issues */
+            animation: none; 
+          }
+        }
+
+        @keyframes flagSlideHorizontal {
           0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
+          100% { background-position: 200% 50%; }
         }
         @keyframes subtleFloat {
           0% { transform: translateY(0px); }
@@ -20,37 +46,31 @@ export function CongressHero() {
         }
       `}} />
 
-      {/* CONTINUOUS MOVING CONGRESS FLAG AURORA BACKGROUND */}
+      {/* CONTINUOUS HORIZONTAL SLIDING FLAG BACKGROUND */}
       <div style={{
-        position: 'absolute', top: '-10%', left: '-10%', right: '-10%', bottom: '-10%',
-        background: 'linear-gradient(120deg, rgba(255,153,51,0.25) 0%, rgba(15,23,42,0.8) 50%, rgba(19,136,8,0.25) 100%)',
-        backgroundSize: '200% 200%',
-        animation: 'congressFlagFlow 12s ease infinite',
-        filter: 'blur(80px)',
-        zIndex: 0, pointerEvents: 'none'
+        position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
+        background: 'linear-gradient(90deg, rgba(255,153,51,0.2) 0%, rgba(255,255,255,0.05) 33%, rgba(19,136,8,0.2) 66%, rgba(255,153,51,0.2) 100%)',
+        backgroundSize: '200% 100%',
+        animation: 'flagSlideHorizontal 8s linear infinite',
+        zIndex: 0, pointerEvents: 'none',
+        maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 90%)',
+        WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 90%)'
       }} />
 
       {/* Animated shimmer top stripe */}
       <div style={{
-        position: 'absolute', top: 0, left: 0, right: 0, height: 2,
-        background: 'linear-gradient(90deg, transparent, rgba(255,153,51,0.8), rgba(255,255,255,0.8), rgba(19,136,8,0.8), transparent)',
-        backgroundSize: '200% 100%',
-        animation: 'shimmer 4s infinite linear',
+        position: 'absolute', top: 0, left: 0, right: 0, height: 3,
+        background: 'linear-gradient(90deg, #FF9933, #FFFFFF, #138808, #FF9933)',
+        backgroundSize: '300% 100%',
+        animation: 'flagSlideHorizontal 4s linear infinite',
         zIndex: 5,
+        boxShadow: '0 0 10px rgba(255,255,255,0.5)'
       }} />
 
       <div style={{ maxWidth: 1100, width: '100%', position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         
-        {/* Full Landscape Banner Showcase (with subtle floating animation) */}
-        <div style={{ 
-          width: '100%', 
-          borderRadius: 24, 
-          overflow: 'hidden', 
-          boxShadow: '0 24px 64px rgba(0,0,0,0.6), 0 4px 16px rgba(0,0,0,0.3), inset 0 0 0 1px rgba(255,255,255,0.15)',
-          background: '#ffffff',
-          position: 'relative',
-          animation: 'subtleFloat 6s ease-in-out infinite'
-        }}>
+        {/* Full Landscape Banner Showcase */}
+        <div className="banner-container">
           <img 
             src="/photos/candidate.jpg" 
             alt="Congress Campaign Banner" 
@@ -61,8 +81,8 @@ export function CongressHero() {
               objectFit: 'contain'
             }} 
           />
-          {/* Subtle inner shadow for depth */}
-          <div style={{ position: 'absolute', inset: 0, boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.1)', pointerEvents: 'none', borderRadius: 24 }} />
+          {/* Subtle inner shadow for depth (hidden on mobile via CSS but inline here works too) */}
+          <div className="hidden sm:block" style={{ position: 'absolute', inset: 0, boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.1)', pointerEvents: 'none' }} />
         </div>
 
         {/* Text & Stats Section Below Banner */}
