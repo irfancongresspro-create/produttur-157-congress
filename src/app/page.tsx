@@ -17,8 +17,29 @@ export default function HomePage() {
 
       <div style={{ maxWidth: 960, margin: '0 auto', padding: '48px 24px 80px' }}>
 
+        {/* Search Form */}
+        <div style={{ marginBottom: 32, marginTop: -24, position: 'relative', zIndex: 10 }}>
+          <HomeSearchClient />
+        </div>
+
         {/* Section Title */}
         <div style={{ textAlign: 'center', marginBottom: 36 }}>
+          <h1 style={{
+            fontSize: 'clamp(26px, 4vw, 40px)',
+            fontWeight: 900, lineHeight: 1.15,
+            color: '#f8fafc', marginBottom: 20,
+            textShadow: '0 4px 24px rgba(0,0,0,0.6)',
+            letterSpacing: '-0.5px'
+          }}>
+            <span lang="te" className="telugu" style={{
+              display: 'block', fontSize: 'clamp(18px, 3vw, 24px)',
+              color: '#FF9933', marginBottom: 8, textShadow: '0 2px 12px rgba(255,153,51,0.3)'
+            }}>
+              ప్రొద్దుటూరు నియోజకవర్గం
+            </span>
+            Produttur Constituency
+          </h1>
+
           <div className="inc-flag-badge" style={{ marginBottom: 20, display: 'inline-flex' }}>
             <div className="inc-tricolor">
               <div className="inc-tricolor-s" />
@@ -40,11 +61,6 @@ export default function HomePage() {
           <p style={{ fontSize: 'clamp(14px, 1.5vw, 18px)', color: '#94a3b8', maxWidth: 600, margin: '0 auto', lineHeight: 1.6 }}>
             Find any voter in Produttur 157 by name, EPIC ID, or door number — supports Telugu & English
           </p>
-        </div>
-
-        {/* Search Form */}
-        <div style={{ marginBottom: 48 }}>
-          <HomeSearchClient />
         </div>
 
         {/* Stats Bar */}

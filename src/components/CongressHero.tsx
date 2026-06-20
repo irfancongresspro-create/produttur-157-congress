@@ -85,31 +85,6 @@ export function CongressHero() {
           <div className="hidden sm:block" style={{ position: 'absolute', inset: 0, boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.1)', pointerEvents: 'none' }} />
         </div>
 
-        {/* Text & Stats Section Below Banner */}
-        <div style={{ marginTop: 40, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          
-
-
-          {/* Constituency title */}
-          <h1 style={{
-            fontSize: 'clamp(26px, 4vw, 40px)',
-            fontWeight: 900, lineHeight: 1.15,
-            color: '#f8fafc', marginBottom: 20,
-            textShadow: '0 4px 24px rgba(0,0,0,0.6)',
-            letterSpacing: '-0.5px'
-          }}>
-            <span lang="te" className="telugu" style={{
-              display: 'block', fontSize: 'clamp(18px, 3vw, 24px)',
-              color: '#FF9933', marginBottom: 8, textShadow: '0 2px 12px rgba(255,153,51,0.3)'
-            }}>
-              ప్రొద్దుటూరు నియోజకవర్గం
-            </span>
-            Produttur Constituency 157
-          </h1>
-
-
-          
-        </div>
       </div>
     </section>
   )
