@@ -6,6 +6,30 @@ export function CongressHero() {
   return (
     <section className="congress-hero" style={{ position: 'relative', overflow: 'hidden', padding: '48px 20px 24px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
+      {/* Inject Keyframe Animations */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes congressFlagFlow {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        @keyframes subtleFloat {
+          0% { transform: translateY(0px); }
+          50% { transform: translateY(-8px); }
+          100% { transform: translateY(0px); }
+        }
+      `}} />
+
+      {/* CONTINUOUS MOVING CONGRESS FLAG AURORA BACKGROUND */}
+      <div style={{
+        position: 'absolute', top: '-10%', left: '-10%', right: '-10%', bottom: '-10%',
+        background: 'linear-gradient(120deg, rgba(255,153,51,0.25) 0%, rgba(15,23,42,0.8) 50%, rgba(19,136,8,0.25) 100%)',
+        backgroundSize: '200% 200%',
+        animation: 'congressFlagFlow 12s ease infinite',
+        filter: 'blur(80px)',
+        zIndex: 0, pointerEvents: 'none'
+      }} />
+
       {/* Animated shimmer top stripe */}
       <div style={{
         position: 'absolute', top: 0, left: 0, right: 0, height: 2,
@@ -15,23 +39,17 @@ export function CongressHero() {
         zIndex: 5,
       }} />
 
-      {/* Dynamic Glow Background */}
-      <div style={{
-        position: 'absolute', top: '30%', left: '50%', transform: 'translate(-50%, -50%)',
-        width: '100%', height: '100%', background: 'radial-gradient(circle, rgba(255,153,51,0.08) 0%, rgba(19,136,8,0.03) 40%, transparent 70%)',
-        zIndex: 0, pointerEvents: 'none'
-      }} />
-
       <div style={{ maxWidth: 1100, width: '100%', position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         
-        {/* Full Landscape Banner Showcase */}
+        {/* Full Landscape Banner Showcase (with subtle floating animation) */}
         <div style={{ 
           width: '100%', 
           borderRadius: 24, 
           overflow: 'hidden', 
           boxShadow: '0 24px 64px rgba(0,0,0,0.6), 0 4px 16px rgba(0,0,0,0.3), inset 0 0 0 1px rgba(255,255,255,0.15)',
           background: '#ffffff',
-          position: 'relative'
+          position: 'relative',
+          animation: 'subtleFloat 6s ease-in-out infinite'
         }}>
           <img 
             src="/photos/candidate.jpg" 
