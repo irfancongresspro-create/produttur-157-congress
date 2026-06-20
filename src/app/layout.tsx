@@ -160,7 +160,7 @@ function CongressFooter() {
         </div>
 
         <p style={{ fontSize: 11, color: '#475569', lineHeight: 1.6, marginBottom: 24 }}>
-          <strong style={{ color: '#64748b' }}>Legal Disclaimer:</strong> All voter data indexed on this platform is extracted via AI (OCR) from the publicly available 2002 Voter List (prepared for the 2026 elections). This platform is NOT affiliated with or endorsed by the Election Commission of India. Data accuracy is not guaranteed — please verify at{' '}
+          <strong style={{ color: '#64748b' }}>Legal Disclaimer:</strong> All voter data indexed on this platform is available from the 2002 Voter List (prepared for the 2026 elections). This platform is NOT affiliated with or endorsed by the Election Commission of India. Data accuracy is not guaranteed — please verify at{' '}
           <a href="https://voters.eci.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: '#FF9933' }}>
             voters.eci.gov.in
           </a>.

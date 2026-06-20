@@ -88,22 +88,7 @@ export function CongressHero() {
         {/* Text & Stats Section Below Banner */}
         <div style={{ marginTop: 40, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           
-          {/* INC Badge */}
-          <div className="inc-flag-badge" style={{ marginBottom: 16 }}>
-            <div className="inc-tricolor">
-              <div className="inc-tricolor-s" />
-              <div className="inc-tricolor-w">
-                <div className="inc-chakra-dot" />
-              </div>
-              <div className="inc-tricolor-g" />
-            </div>
-            <span style={{
-              fontSize: 13, fontWeight: 800, letterSpacing: '2.5px',
-              textTransform: 'uppercase', color: '#94a3b8'
-            }}>
-              Official Voter Directory
-            </span>
-          </div>
+
 
           {/* Constituency title */}
           <h1 style={{
@@ -122,15 +107,7 @@ export function CongressHero() {
             Produttur Constituency 157
           </h1>
 
-          {/* Stats Pills */}
-          <div style={{
-            display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'center',
-            marginTop: 4,
-          }}>
-            <span className="glass-pill" style={{ fontSize: 13, padding: '8px 20px', border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)', backdropFilter: 'blur(12px)' }}>🗳️ Kadapa District</span>
-            <span className="glass-pill" style={{ fontSize: 13, padding: '8px 20px', border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)', backdropFilter: 'blur(12px)' }}>📋 Assembly No. 157</span>
-            <span className="glass-pill" style={{ fontSize: 13, padding: '8px 20px', border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)', backdropFilter: 'blur(12px)' }}>🔍 2,14,168 Voters</span>
-          </div>
+
           
         </div>
       </div>
