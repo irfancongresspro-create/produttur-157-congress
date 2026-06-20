@@ -35,7 +35,7 @@ export default function HomePage() {
             color: '#f8fafc', marginBottom: 12,
             textShadow: '0 4px 20px rgba(0,0,0,0.5)',
           }}>
-            2002 ఓటరును ఒక్క క్షణంలో వెతకండి
+            2002 ఓటరును వెతకండి
           </h2>
           <p style={{ fontSize: 'clamp(14px, 1.5vw, 18px)', color: '#94a3b8', maxWidth: 600, margin: '0 auto', lineHeight: 1.6 }}>
             Find any voter in Produttur 157 by name, EPIC ID, or door number — supports Telugu & English
