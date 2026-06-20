@@ -1,26 +1,26 @@
 import React from 'react'
 
 interface Voter {
-  id?: string
-  voter_name_english?: string
-  voter_name_telugu?: string
-  relative_name_english?: string
-  relative_name_telugu?: string
-  house_no?: string
-  age?: number
-  gender?: string
-  epic_id?: string
-  assembly_no?: number
-  assembly_name?: string
-  part_no?: number
-  serial_no?: number
-  polling_station_no?: number
-  polling_station_name?: string
-  house_no_normalized?: number
-  match_type?: string
-  match_score?: number
-  source_pdf?: string
-  page_no?: number
+  id?: string | null
+  voter_name_english?: string | null
+  voter_name_telugu?: string | null
+  relative_name_english?: string | null
+  relative_name_telugu?: string | null
+  house_no?: string | null
+  age?: number | null
+  gender?: string | null
+  epic_id?: string | null
+  assembly_no?: number | null
+  assembly_name?: string | null
+  part_no?: number | null
+  serial_no?: number | null
+  polling_station_no?: number | null
+  polling_station_name?: string | null
+  house_no_normalized?: number | null
+  match_type?: string | null
+  match_score?: number | null
+  source_pdf?: string | null
+  page_no?: number | null
   [key: string]: any
 }
 
