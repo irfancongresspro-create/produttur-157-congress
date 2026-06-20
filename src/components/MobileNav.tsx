@@ -1,10 +1,16 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import Link from 'next/link'
 
 export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   return (
     <div className="md:hidden">
@@ -25,7 +31,7 @@ export function MobileNav() {
         ☰
       </button>
 
-      {isOpen && (
+      {isOpen && mounted && createPortal(
         <div 
           className="fixed inset-0 z-[200] flex flex-col"
           style={{ background: 'rgba(4,8,18,0.98)', backdropFilter: 'blur(16px)' }}
@@ -57,7 +63,8 @@ export function MobileNav() {
           <div style={{ marginTop: 'auto', padding: '32px 24px', textAlign: 'center', color: '#64748b', fontSize: 13 }}>
             Indian National Congress<br/>Produttur 157
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   )
