@@ -26,7 +26,7 @@ export default function HomePage() {
               <div className="inc-tricolor-g" />
             </div>
             <span style={{ fontSize: 12, fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', color: '#94a3b8' }}>
-              Voter Search Engine
+              Voter Search Engine — <span style={{ color: '#FF9933' }}>2002 Voter List for SIR 2026</span>
             </span>
           </div>
 

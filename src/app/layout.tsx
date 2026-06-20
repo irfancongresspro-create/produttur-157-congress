@@ -137,7 +137,20 @@ function CongressFooter() {
           ప్రొద్దుటూరు నియోజకవర్గం 157 — అధికారిక ఓటర్ శోధన
         </div>
 
+        <div style={{ padding: '16px', background: 'rgba(255,153,51,0.08)', border: '1px solid rgba(255,153,51,0.2)', borderRadius: 12, marginBottom: 24, textAlign: 'left' }}>
+          <strong style={{ color: '#FF9933', display: 'block', marginBottom: 6, fontSize: 13, textTransform: 'uppercase', letterSpacing: 0.5 }}>Independent Public Service Portal</strong>
+          <p style={{ fontSize: 12, color: '#cbd5e1', lineHeight: 1.5, margin: 0 }}>
+            This website is not affiliated with the Election Commission of India. Information is provided only for public convenience. Users should verify all details through official Election Commission sources before taking any action.
+          </p>
+        </div>
+
         <div style={{ height: 1, background: 'rgba(255,153,51,0.1)', margin: '16px 0' }} />
+
+        <div style={{ marginBottom: 16 }}>
+          <a href="/legal" style={{ color: '#f8fafc', fontSize: 13, fontWeight: 600, textDecoration: 'underline', textUnderlineOffset: 4 }}>
+            Read Full Legal Disclaimer & Privacy Policy
+          </a>
+        </div>
 
         <p style={{ fontSize: 11, color: '#475569', lineHeight: 1.6 }}>
           <strong style={{ color: '#64748b' }}>Legal Disclaimer:</strong> All voter data indexed on this platform is extracted via AI (OCR) from the publicly available 2002 Voter List (prepared for the 2026 elections). This platform is NOT affiliated with or endorsed by the Election Commission of India. Data accuracy is not guaranteed — please verify at{' '}
