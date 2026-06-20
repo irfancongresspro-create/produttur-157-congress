@@ -21,8 +21,6 @@ function SearchPageInner() {
   const [familyView, setFamilyView] = useState<{ house_no_normalized: number; part_no: number; house_no_raw: string; assembly_no: number } | null>(null)
   const [matchFilter, setMatchFilter] = useState<'ALL' | 'EXACT' | 'CLOSE' | 'POSSIBLE'>('ALL')
   const [metadata, setMetadata] = useState<VoterPart[]>([])
-  const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false)
-
   // Always use assembly 157
   const ASSEMBLY_NO = '157'
 
@@ -180,98 +178,51 @@ function SearchPageInner() {
       {/* Filters */}
       {!familyView && (
         <>
-          {/* Desktop Filters */}
-          <div className="hidden md:flex" style={{ gap: 12, marginBottom: 16, flexWrap: 'wrap', alignItems: 'center' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <label style={{ fontSize: 13, color: '#94a3b8', fontWeight: 600 }}>బంధువు:</label>
+          {/* Unified Inline Filters */}
+          <div className="flex flex-col md:flex-row" style={{ gap: 12, marginBottom: 16, alignItems: 'stretch' }}>
+            <div style={{ display: 'flex', flex: 1, flexDirection: 'column', gap: 6 }}>
+              <label style={{ fontSize: 13, color: '#94a3b8', fontWeight: 600 }}>బంధువు (Relative Name):</label>
               <input
                 className="input"
                 type="text"
                 value={filterRelativeName}
                 onChange={e => setFilterRelativeName(e.target.value)}
                 placeholder="Father/Husband name..."
-                style={{ width: 180, padding: '7px 12px', fontSize: 13, borderRadius: 8 }}
+                style={{ width: '100%', padding: '10px 12px', fontSize: 14, borderRadius: 8 }}
               />
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <label style={{ fontSize: 13, color: '#94a3b8' }}>Part No:</label>
+            <div style={{ display: 'flex', flex: 1, flexDirection: 'column', gap: 6 }}>
+              <label style={{ fontSize: 13, color: '#94a3b8', fontWeight: 600 }}>Part No:</label>
               <select
                 className="input"
                 value={filterPartNo}
                 onChange={e => setFilterPartNo(e.target.value)}
-                style={{ width: 120, padding: '7px 12px', appearance: 'auto', fontSize: 13, borderRadius: 8 }}
+                style={{ width: '100%', padding: '10px 12px', appearance: 'auto', fontSize: 14, borderRadius: 8 }}
               >
                 <option value="">All Parts</option>
                 {availableParts.map(p => <option key={p} value={p}>Part {p}</option>)}
               </select>
             </div>
+            
+            <div className="md:flex md:items-end md:mb-[2px] hidden">
+               {(filterPartNo || filterRelativeName) && (
+                <button className="btn-ghost" onClick={() => { setFilterPartNo(''); setFilterRelativeName('') }}
+                  style={{ padding: '10px 16px', fontSize: 13, borderRadius: 8 }}>
+                  ✕ Clear
+                </button>
+              )}
+            </div>
+          </div>
+          
+          {/* Mobile Clear Button */}
+          <div className="md:hidden">
             {(filterPartNo || filterRelativeName) && (
               <button className="btn-ghost" onClick={() => { setFilterPartNo(''); setFilterRelativeName('') }}
-                style={{ padding: '6px 12px', fontSize: 12, borderRadius: 8 }}>
-                ✕ Clear
+                style={{ padding: '10px 16px', fontSize: 13, borderRadius: 8, width: '100%', marginBottom: 16 }}>
+                ✕ Clear Filters
               </button>
             )}
           </div>
-
-          {/* Mobile Filter Button */}
-          <div className="md:hidden flex justify-between items-center mb-4 px-1">
-            <span style={{ fontSize: 13, color: '#64748b', fontWeight: 600 }}>
-              {hasSearched ? `${results.length} results` : 'Search filters'}
-            </span>
-            <button
-              onClick={() => setIsMobileFiltersOpen(true)}
-              style={{
-                padding: '8px 16px', background: 'rgba(255,153,51,0.1)',
-                border: '1px solid rgba(255,153,51,0.2)', color: '#FF9933',
-                borderRadius: 8, fontSize: 13, fontWeight: 600, cursor: 'pointer',
-              }}>
-              ⚙️ Filters
-            </button>
-          </div>
-
-          {/* Mobile Bottom Sheet */}
-          {isMobileFiltersOpen && (
-            <div className="md:hidden fixed inset-0 z-[100] flex flex-col justify-end">
-              <div className="absolute inset-0 bg-black/60" onClick={() => setIsMobileFiltersOpen(false)} />
-              <div className="relative bg-[#050c15] rounded-t-3xl p-6 border-t border-orange-500/20 animate-slide-up"
-                style={{ paddingBottom: 'calc(env(safe-area-inset-bottom) + 24px)' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 20 }}>
-                  <h3 style={{ fontSize: 18, fontWeight: 700, color: '#FF9933' }}>Refine Search</h3>
-                  <button onClick={() => setIsMobileFiltersOpen(false)}
-                    style={{ padding: 8, background: 'rgba(255,255,255,0.08)', borderRadius: '50%' }}>✕</button>
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-                  <div>
-                    <label style={{ fontSize: 13, color: '#94a3b8', fontWeight: 600, display: 'block', marginBottom: 6 }}>Relative Name</label>
-                    <input className="input" type="text" value={filterRelativeName}
-                      onChange={e => setFilterRelativeName(e.target.value)}
-                      placeholder="Father/Husband name..."
-                      style={{ width: '100%', padding: '12px 16px', fontSize: 16 }} />
-                  </div>
-                  <div>
-                    <label style={{ fontSize: 13, color: '#94a3b8', display: 'block', marginBottom: 6 }}>Part No</label>
-                    <select className="input" value={filterPartNo} onChange={e => setFilterPartNo(e.target.value)}
-                      style={{ width: '100%', padding: '12px 16px', appearance: 'auto', fontSize: 16 }}>
-                      <option value="">All Parts</option>
-                      {availableParts.map(p => <option key={p} value={p}>Part {p}</option>)}
-                    </select>
-                  </div>
-                </div>
-                <div style={{ marginTop: 24, display: 'flex', gap: 12 }}>
-                  {(filterPartNo || filterRelativeName) && (
-                    <button className="btn-ghost" onClick={() => { setFilterPartNo(''); setFilterRelativeName(''); setIsMobileFiltersOpen(false) }}
-                      style={{ flex: 1, padding: 14, borderRadius: 12, fontWeight: 700, fontSize: 15 }}>
-                      Clear
-                    </button>
-                  )}
-                  <button className="btn-primary" onClick={() => setIsMobileFiltersOpen(false)}
-                    style={{ flex: 2, padding: 14, borderRadius: 12, fontWeight: 700, fontSize: 15 }}>
-                    Apply
-                  </button>
-                </div>
-              </div>
-            </div>
-          )}
         </>
       )}
 
