@@ -13,6 +13,7 @@ export function CongressHero() {
         }
         .banner-container {
           width: 100%;
+          aspect-ratio: 16 / 9; /* FORCES the exact landscape ratio to prevent ANY cropping */
           border-radius: 24px;
           overflow: hidden;
           box-shadow: 0 24px 64px rgba(0,0,0,0.6), 0 4px 16px rgba(0,0,0,0.3), inset 0 0 0 1px rgba(255,255,255,0.15);
@@ -37,7 +38,7 @@ export function CongressHero() {
 
         @keyframes flagSlideHorizontal {
           0% { background-position: 0% 50%; }
-          100% { background-position: 200% 50%; }
+          100% { background-position: -200% 50%; } /* Smooth seamless loop */
         }
         @keyframes subtleFloat {
           0% { transform: translateY(0px); }
@@ -49,9 +50,10 @@ export function CongressHero() {
       {/* CONTINUOUS HORIZONTAL SLIDING FLAG BACKGROUND */}
       <div style={{
         position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
-        background: 'linear-gradient(90deg, rgba(255,153,51,0.2) 0%, rgba(255,255,255,0.05) 33%, rgba(19,136,8,0.2) 66%, rgba(255,153,51,0.2) 100%)',
+        /* Perfect looping gradient: Saffron -> White -> Green -> Saffron -> White -> Green */
+        background: 'linear-gradient(90deg, rgba(255,153,51,0.25) 0%, rgba(255,255,255,0.08) 16.66%, rgba(19,136,8,0.25) 33.33%, rgba(255,153,51,0.25) 50%, rgba(255,255,255,0.08) 66.66%, rgba(19,136,8,0.25) 83.33%, rgba(255,153,51,0.25) 100%)',
         backgroundSize: '200% 100%',
-        animation: 'flagSlideHorizontal 8s linear infinite',
+        animation: 'flagSlideHorizontal 15s linear infinite',
         zIndex: 0, pointerEvents: 'none',
         maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 90%)',
         WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 90%)'
@@ -60,9 +62,9 @@ export function CongressHero() {
       {/* Animated shimmer top stripe */}
       <div style={{
         position: 'absolute', top: 0, left: 0, right: 0, height: 3,
-        background: 'linear-gradient(90deg, #FF9933, #FFFFFF, #138808, #FF9933)',
-        backgroundSize: '300% 100%',
-        animation: 'flagSlideHorizontal 4s linear infinite',
+        background: 'linear-gradient(90deg, #FF9933, #FFFFFF, #138808, #FF9933, #FFFFFF, #138808)',
+        backgroundSize: '200% 100%',
+        animation: 'flagSlideHorizontal 8s linear infinite',
         zIndex: 5,
         boxShadow: '0 0 10px rgba(255,255,255,0.5)'
       }} />
@@ -76,9 +78,10 @@ export function CongressHero() {
             alt="Congress Campaign Banner" 
             style={{ 
               width: '100%', 
-              height: 'auto', 
+              height: '100%', 
               display: 'block',
-              objectFit: 'contain'
+              objectFit: 'contain',
+              objectPosition: 'center'
             }} 
           />
           {/* Subtle inner shadow for depth (hidden on mobile via CSS but inline here works too) */}
