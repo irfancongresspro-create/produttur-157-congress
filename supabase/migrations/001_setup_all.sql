@@ -102,7 +102,7 @@ CREATE INDEX IF NOT EXISTS idx_voters_name_embedding_hnsw
   WITH (m = 16, ef_construction = 64);
 
 -- B-tree indexes
-CREATE UNIQUE INDEX IF NOT EXISTS idx_voters_epic_id
+CREATE INDEX IF NOT EXISTS idx_voters_epic_id
   ON voters (epic_id) WHERE epic_id IS NOT NULL;
 
 CREATE INDEX IF NOT EXISTS idx_voters_house_no_normalized
