@@ -125,22 +125,28 @@ ALTER TABLE voter_parts ENABLE ROW LEVEL SECURITY;
 ALTER TABLE extraction_jobs ENABLE ROW LEVEL SECURITY;
 
 -- Allow anon read on voters and voter_parts
+DROP POLICY IF EXISTS "Public read voters" ON voters;
 CREATE POLICY "Public read voters"
   ON voters FOR SELECT TO anon USING (true);
 
+DROP POLICY IF EXISTS "Public read voter_parts" ON voter_parts;
 CREATE POLICY "Public read voter_parts"
   ON voter_parts FOR SELECT TO anon USING (true);
 
+DROP POLICY IF EXISTS "Public read extraction_jobs" ON extraction_jobs;
 CREATE POLICY "Public read extraction_jobs"
   ON extraction_jobs FOR SELECT TO anon USING (true);
 
 -- Allow service_role full access (for API routes)
+DROP POLICY IF EXISTS "Service full access voters" ON voters;
 CREATE POLICY "Service full access voters"
   ON voters FOR ALL TO service_role USING (true);
 
+DROP POLICY IF EXISTS "Service full access voter_parts" ON voter_parts;
 CREATE POLICY "Service full access voter_parts"
   ON voter_parts FOR ALL TO service_role USING (true);
 
+DROP POLICY IF EXISTS "Service full access extraction_jobs" ON extraction_jobs;
 CREATE POLICY "Service full access extraction_jobs"
   ON extraction_jobs FOR ALL TO service_role USING (true);
 -- ============================================================

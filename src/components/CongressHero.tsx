@@ -13,7 +13,6 @@ export function CongressHero() {
         }
         .banner-container {
           width: 100%;
-          aspect-ratio: 16 / 9; /* FORCES the exact landscape ratio to prevent ANY cropping */
           border-radius: 24px;
           overflow: hidden;
           box-shadow: 0 24px 64px rgba(0,0,0,0.6), 0 4px 16px rgba(0,0,0,0.3), inset 0 0 0 1px rgba(255,255,255,0.15);
@@ -78,10 +77,8 @@ export function CongressHero() {
             alt="Congress Campaign Banner" 
             style={{ 
               width: '100%', 
-              height: '100%', 
+              height: 'auto', 
               display: 'block',
-              objectFit: 'contain',
-              objectPosition: 'center'
             }} 
           />
           {/* Subtle inner shadow for depth (hidden on mobile via CSS but inline here works too) */}
