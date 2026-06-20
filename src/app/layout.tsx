@@ -175,6 +175,7 @@ function CongressFooter() {
             href="https://www.mindt.co.in" 
             target="_blank" 
             rel="noopener noreferrer" 
+            className="mindt-link"
             style={{ 
               fontSize: 14, 
               fontWeight: 700, 
@@ -185,8 +186,6 @@ function CongressFooter() {
               gap: 6,
               transition: 'color 0.2s'
             }}
-            onMouseOver={(e) => e.currentTarget.style.color = '#f8fafc'}
-            onMouseOut={(e) => e.currentTarget.style.color = '#94a3b8'}
           >
             Mindt Private Limited
           </a>
@@ -194,6 +193,9 @@ function CongressFooter() {
             www.mindt.co.in
           </span>
         </div>
+        <style dangerouslySetInnerHTML={{ __html: `
+          .mindt-link:hover { color: #f8fafc !important; }
+        `}} />
       </div>
     </footer>
   )
