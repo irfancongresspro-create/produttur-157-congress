@@ -121,9 +121,9 @@ function VoterCard({ voter, onViewFamily }: { voter: Voter; onViewFamily: () => 
         >
           👥 Family Search
         </button>
-        {voter.source_pdf && (
+        {(voter.source_pdf || voter.part_no) && (
           <a
-            href={voter.source_pdf}
+            href={voter.source_pdf || `https://ceoaperolls.ap.gov.in/AP_Eroll_2024/Rolls/AC157/S01A157P${String(voter.part_no).padStart(3, '0')}.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -135,7 +135,7 @@ function VoterCard({ voter, onViewFamily }: { voter: Voter; onViewFamily: () => 
               display: 'flex', alignItems: 'center', justifyContent: 'center',
             }}
           >
-            📄 PDF Pg {voter.page_no || '-'}
+            📄 {voter.page_no ? `PDF Pg ${voter.page_no}` : 'View PDF'}
           </a>
         )}
       </div>
