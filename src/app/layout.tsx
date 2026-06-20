@@ -140,7 +140,7 @@ function CongressFooter() {
         <div style={{ height: 1, background: 'rgba(255,153,51,0.1)', margin: '16px 0' }} />
 
         <p style={{ fontSize: 11, color: '#475569', lineHeight: 1.6 }}>
-          <strong style={{ color: '#64748b' }}>Legal Disclaimer:</strong> All voter data indexed on this platform is extracted via AI (OCR) from the publicly available 2024 Electoral Rolls published by the Government of India. This platform is NOT affiliated with or endorsed by the Election Commission of India. Data accuracy is not guaranteed — please verify at{' '}
+          <strong style={{ color: '#64748b' }}>Legal Disclaimer:</strong> All voter data indexed on this platform is extracted via AI (OCR) from the publicly available 2002 Voter List (prepared for the 2026 elections). This platform is NOT affiliated with or endorsed by the Election Commission of India. Data accuracy is not guaranteed — please verify at{' '}
           <a href="https://voters.eci.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: '#FF9933' }}>
             voters.eci.gov.in
           </a>.
