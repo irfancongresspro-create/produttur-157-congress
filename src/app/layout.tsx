@@ -86,21 +86,29 @@ function CongressTopNav() {
               <NavLink href="/" label="Home" />
               <NavLink href="/search" label="Search" />
               <NavLink href="/browse" label="Directory" />
+              <NavLink href="/photos/URBAN_Mapping report_14.06.26_9.30 PM.pdf" label="BLO Contacts" target="_blank" />
             </div>
-            <a
-              href="/search"
-              style={{
-                background: 'linear-gradient(90deg, #FF9933, #138808)',
-                color: 'white', textDecoration: 'none',
-                padding: '8px 16px', borderRadius: 100,
-                fontWeight: 700, fontSize: 13,
-                boxShadow: '0 2px 12px rgba(255,153,51,0.3)',
-                transition: 'all 0.2s',
-                whiteSpace: 'nowrap'
-              }}
-            >
-              🔍 <span className="hidden sm:inline">Voter </span>Search
-            </a>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+              <a
+                href="/search"
+                style={{
+                  background: 'linear-gradient(90deg, #FF9933, #138808)',
+                  color: 'white', textDecoration: 'none',
+                  padding: '8px 16px', borderRadius: 100,
+                  fontWeight: 700, fontSize: 13,
+                  boxShadow: '0 2px 12px rgba(255,153,51,0.3)',
+                  transition: 'all 0.2s',
+                  whiteSpace: 'nowrap'
+                }}
+              >
+                🔍 <span className="hidden sm:inline">Voter </span>Search
+              </a>
+              <img 
+                src="/photos/congress-hand.png" 
+                alt="Congress Symbol" 
+                style={{ height: 28, width: 'auto', objectFit: 'contain' }} 
+              />
+            </div>
           </nav>
         </div>
       </div>
@@ -108,9 +116,9 @@ function CongressTopNav() {
   )
 }
 
-function NavLink({ href, label }: { href: string; label: string }) {
+function NavLink({ href, label, target }: { href: string; label: string; target?: string }) {
   return (
-    <a href={href} className="nav-link" style={{
+    <a href={href} target={target} className="nav-link" style={{
       textDecoration: 'none', fontSize: 14, fontWeight: 500,
       transition: 'color 0.2s', padding: '4px 8px',
     }}>

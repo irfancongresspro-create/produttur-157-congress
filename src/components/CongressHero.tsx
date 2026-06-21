@@ -68,7 +68,7 @@ export function CongressHero() {
         boxShadow: '0 0 10px rgba(255,255,255,0.5)'
       }} />
 
-      <div style={{ maxWidth: 1100, width: '100%', position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div style={{ maxWidth: 770, width: '100%', position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         
         {/* Full Landscape Banner Showcase */}
         <div className="banner-container">

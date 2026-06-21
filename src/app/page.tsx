@@ -17,29 +17,22 @@ export default function HomePage() {
 
       <div style={{ maxWidth: 960, margin: '0 auto', padding: '48px 24px 80px' }}>
 
-        {/* Telugu Constituency Title Above Search */}
-        <div style={{ textAlign: 'center', marginTop: -16, marginBottom: 20, position: 'relative', zIndex: 10 }}>
+        {/* Title Section */}
+        <div style={{ textAlign: 'center', marginTop: -32, marginBottom: 24, position: 'relative', zIndex: 10 }}>
           <span lang="te" className="telugu" style={{
             display: 'block', fontSize: 'clamp(20px, 4vw, 28px)',
             fontWeight: 900, color: '#FF9933', 
             textShadow: '0 2px 12px rgba(255,153,51,0.4)',
-            letterSpacing: '0.5px'
+            letterSpacing: '0.5px',
+            marginBottom: 8
           }}>
             ప్రొద్దుటూరు నియోజకవర్గం
           </span>
-        </div>
 
-        {/* Search Form */}
-        <div style={{ marginBottom: 32, position: 'relative', zIndex: 10 }}>
-          <HomeSearchClient />
-        </div>
-
-        {/* Section Title */}
-        <div style={{ textAlign: 'center', marginBottom: 36 }}>
           <h1 style={{
             fontSize: 'clamp(22px, 3vw, 32px)',
             fontWeight: 900, lineHeight: 1.15,
-            color: '#f8fafc', marginBottom: 20,
+            color: '#f8fafc', marginBottom: 12,
             textShadow: '0 4px 24px rgba(0,0,0,0.6)',
             letterSpacing: '-0.5px'
           }}>
@@ -59,11 +52,19 @@ export default function HomePage() {
 
           <h2 style={{
             fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, lineHeight: 1.15,
-            color: '#f8fafc', marginBottom: 12,
+            color: '#f8fafc', marginBottom: 20,
             textShadow: '0 4px 20px rgba(0,0,0,0.5)',
           }}>
             2002 ఓటరును వెతకండి
           </h2>
+        </div>
+
+        {/* Search Form */}
+        <div style={{ marginBottom: 32, position: 'relative', zIndex: 10 }}>
+          <HomeSearchClient />
+        </div>
+
+        <div style={{ textAlign: 'center', marginBottom: 36 }}>
           <p style={{ fontSize: 'clamp(14px, 1.5vw, 18px)', color: '#94a3b8', maxWidth: 600, margin: '0 auto', lineHeight: 1.6 }}>
             Find any voter in Produttur 157 by name, EPIC ID, or door number — supports Telugu & English
           </p>
