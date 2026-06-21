@@ -1,0 +1,989 @@
+[
+  {
+    "sl_no": 1,
+    "part_no": 126,
+    "name": "Siva Kumar Vutti",
+    "mobile": "9959476702",
+    "total_electors": 1015
+  },
+  {
+    "sl_no": 2,
+    "part_no": 159,
+    "name": "Rama Raju Battala",
+    "mobile": "6302616737",
+    "total_electors": 1082
+  },
+  {
+    "sl_no": 3,
+    "part_no": 67,
+    "name": "Venkata Swarup Kumar Paladi",
+    "mobile": "9491914038",
+    "total_electors": 917
+  },
+  {
+    "sl_no": 4,
+    "part_no": 133,
+    "name": "Vishnu Kumar Reddy Beeram",
+    "mobile": "9440440760",
+    "total_electors": 1051
+  },
+  {
+    "sl_no": 5,
+    "part_no": 149,
+    "name": "Shasha Valli Syed",
+    "mobile": "8341070099",
+    "total_electors": 1129
+  },
+  {
+    "sl_no": 6,
+    "part_no": 74,
+    "name": "Prabhakar Eluchuru",
+    "mobile": "9959838940",
+    "total_electors": 1164
+  },
+  {
+    "sl_no": 7,
+    "part_no": 123,
+    "name": "Subbarayudu Payinti",
+    "mobile": "8309442557",
+    "total_electors": 1260
+  },
+  {
+    "sl_no": 8,
+    "part_no": 181,
+    "name": "Suvarna Thirupalu",
+    "mobile": "8074810108",
+    "total_electors": 1413
+  },
+  {
+    "sl_no": 9,
+    "part_no": 158,
+    "name": "Mabuhussain Kanala",
+    "mobile": "9866638653",
+    "total_electors": 487
+  },
+  {
+    "sl_no": 10,
+    "part_no": 82,
+    "name": "Suresh Mundla",
+    "mobile": "7386904036",
+    "total_electors": 875
+  },
+  {
+    "sl_no": 11,
+    "part_no": 89,
+    "name": "Shaik Mahammad Rafi",
+    "mobile": "8885404480",
+    "total_electors": 1100
+  },
+  {
+    "sl_no": 12,
+    "part_no": 58,
+    "name": "Lakshmi Prasanna Banka",
+    "mobile": "9346735583",
+    "total_electors": 1343
+  },
+  {
+    "sl_no": 13,
+    "part_no": 154,
+    "name": "Naruboina Srilatha",
+    "mobile": "9581176284",
+    "total_electors": 868
+  },
+  {
+    "sl_no": 14,
+    "part_no": 161,
+    "name": "Naresh Kumar Reddy Anki Reddy",
+    "mobile": "9849831512",
+    "total_electors": 1203
+  },
+  {
+    "sl_no": 15,
+    "part_no": 81,
+    "name": "Venkata Surendra Kothapalli",
+    "mobile": "7799899343",
+    "total_electors": 917
+  },
+  {
+    "sl_no": 16,
+    "part_no": 109,
+    "name": "Vara Lakshmi K",
+    "mobile": "7013275796",
+    "total_electors": 972
+  },
+  {
+    "sl_no": 17,
+    "part_no": 52,
+    "name": "Suniil Reddy Guddeti",
+    "mobile": "7799390391",
+    "total_electors": 474
+  },
+  {
+    "sl_no": 18,
+    "part_no": 187,
+    "name": "Gagan Kumar Reddy Mule",
+    "mobile": "8885610602",
+    "total_electors": 818
+  },
+  {
+    "sl_no": 19,
+    "part_no": 141,
+    "name": "Subbarayudu Sagala",
+    "mobile": "9885332610",
+    "total_electors": 1138
+  },
+  {
+    "sl_no": 20,
+    "part_no": 160,
+    "name": "Rajeshwari Yankala",
+    "mobile": "6300988504",
+    "total_electors": 1215
+  },
+  {
+    "sl_no": 21,
+    "part_no": 115,
+    "name": "Vishnu Vardhan Reddy G",
+    "mobile": "8985602029",
+    "total_electors": 1386
+  },
+  {
+    "sl_no": 22,
+    "part_no": 136,
+    "name": "Madasupeddamastan Mp",
+    "mobile": "8074337953",
+    "total_electors": 931
+  },
+  {
+    "sl_no": 23,
+    "part_no": 90,
+    "name": "N Rami Reddy",
+    "mobile": "6303944913",
+    "total_electors": 1161
+  },
+  {
+    "sl_no": 24,
+    "part_no": 167,
+    "name": "Ramnaresh Yadav Naruboina",
+    "mobile": "9000545064",
+    "total_electors": 626
+  },
+  {
+    "sl_no": 25,
+    "part_no": 51,
+    "name": "Jamal Basha Bepari Shaik",
+    "mobile": "7207108478",
+    "total_electors": 1189
+  },
+  {
+    "sl_no": 26,
+    "part_no": 121,
+    "name": "Kalavathi Bai Moode",
+    "mobile": "6309824633",
+    "total_electors": 896
+  },
+  {
+    "sl_no": 27,
+    "part_no": 78,
+    "name": "Surendra Sanganaboyana",
+    "mobile": "9490811782",
+    "total_electors": 939
+  },
+  {
+    "sl_no": 28,
+    "part_no": 138,
+    "name": "G Tejaswini",
+    "mobile": "9247175947",
+    "total_electors": 1365
+  },
+  {
+    "sl_no": 29,
+    "part_no": 69,
+    "name": "Narasimha A",
+    "mobile": "8074564097",
+    "total_electors": 532
+  },
+  {
+    "sl_no": 30,
+    "part_no": 124,
+    "name": "Siva Prasad Reddy Guddam",
+    "mobile": "9949975686",
+    "total_electors": 1176
+  },
+  {
+    "sl_no": 31,
+    "part_no": 150,
+    "name": "Sunil Manchala",
+    "mobile": "7981901663",
+    "total_electors": 1279
+  },
+  {
+    "sl_no": 32,
+    "part_no": 163,
+    "name": "Gurram Sree Lakshmi",
+    "mobile": "9182197714",
+    "total_electors": 1235
+  },
+  {
+    "sl_no": 33,
+    "part_no": 165,
+    "name": "Ramesh Reddy V V",
+    "mobile": "7730840275",
+    "total_electors": 1105
+  },
+  {
+    "sl_no": 34,
+    "part_no": 119,
+    "name": "Vasundhara Ummadisetty",
+    "mobile": "8247070406",
+    "total_electors": 1046
+  },
+  {
+    "sl_no": 35,
+    "part_no": 129,
+    "name": "Imtiyaz Basha Shaik Bepari",
+    "mobile": "6305792006",
+    "total_electors": 1180
+  },
+  {
+    "sl_no": 36,
+    "part_no": 128,
+    "name": "Vinay Kuamr Reddy Putta",
+    "mobile": "8247366553",
+    "total_electors": 1018
+  },
+  {
+    "sl_no": 37,
+    "part_no": 64,
+    "name": "Venkata Prasad Rupanagudi",
+    "mobile": "6305576640",
+    "total_electors": 1237
+  },
+  {
+    "sl_no": 38,
+    "part_no": 125,
+    "name": "Potukanti Abdul Hafeez P",
+    "mobile": "9849409991",
+    "total_electors": 838
+  },
+  {
+    "sl_no": 39,
+    "part_no": 135,
+    "name": "Yadav Subash",
+    "mobile": "9100589220",
+    "total_electors": 841
+  },
+  {
+    "sl_no": 40,
+    "part_no": 99,
+    "name": "Gangadhara Vidya Sagar Gujjula",
+    "mobile": "9396516032",
+    "total_electors": 1014
+  },
+  {
+    "sl_no": 41,
+    "part_no": 75,
+    "name": "Srihari Pothuraju",
+    "mobile": "8886743987",
+    "total_electors": 728
+  },
+  {
+    "sl_no": 42,
+    "part_no": 61,
+    "name": "Naga Yamini Y",
+    "mobile": "7386676836",
+    "total_electors": 566
+  },
+  {
+    "sl_no": 43,
+    "part_no": 79,
+    "name": "Venu Gopal Kunda",
+    "mobile": "9533910214",
+    "total_electors": 1466
+  },
+  {
+    "sl_no": 44,
+    "part_no": 182,
+    "name": "Rajeswari Bolisetty",
+    "mobile": "7816074382",
+    "total_electors": 1240
+  },
+  {
+    "sl_no": 45,
+    "part_no": 93,
+    "name": "K. Mahesh Babu",
+    "mobile": "8885332190",
+    "total_electors": 807
+  },
+  {
+    "sl_no": 46,
+    "part_no": 70,
+    "name": "Khasim Peera Shaik",
+    "mobile": "9441184987",
+    "total_electors": 1171
+  },
+  {
+    "sl_no": 47,
+    "part_no": 116,
+    "name": "Gummani Ranganath",
+    "mobile": "9441619719",
+    "total_electors": 789
+  },
+  {
+    "sl_no": 48,
+    "part_no": 62,
+    "name": "Kummarapalli Dastagiri",
+    "mobile": "8099988129",
+    "total_electors": 1253
+  },
+  {
+    "sl_no": 49,
+    "part_no": 172,
+    "name": "B Kezjya Rani",
+    "mobile": "9652825093",
+    "total_electors": 1153
+  },
+  {
+    "sl_no": 50,
+    "part_no": 144,
+    "name": "Ashok Kumar Reddy N",
+    "mobile": "9949661205",
+    "total_electors": 882
+  },
+  {
+    "sl_no": 51,
+    "part_no": 174,
+    "name": "Sukanya Vasa",
+    "mobile": "6281123546",
+    "total_electors": 1033
+  },
+  {
+    "sl_no": 52,
+    "part_no": 80,
+    "name": "Manjula Palla",
+    "mobile": "9052330628",
+    "total_electors": 1469
+  },
+  {
+    "sl_no": 53,
+    "part_no": 113,
+    "name": "Praneeth Kumar Rosigari",
+    "mobile": "9533437256",
+    "total_electors": 960
+  },
+  {
+    "sl_no": 54,
+    "part_no": 140,
+    "name": "Ramatulasi Vennapusa",
+    "mobile": "9951238919",
+    "total_electors": 1025
+  },
+  {
+    "sl_no": 55,
+    "part_no": 110,
+    "name": "Dada Kesava Rangaiah Chenna",
+    "mobile": "7032526512",
+    "total_electors": 1003
+  },
+  {
+    "sl_no": 56,
+    "part_no": 188,
+    "name": "Ravi Kiran Babu Gangarapu",
+    "mobile": "9985665056",
+    "total_electors": 1103
+  },
+  {
+    "sl_no": 57,
+    "part_no": 66,
+    "name": "Kiran T",
+    "mobile": "9502210495",
+    "total_electors": 728
+  },
+  {
+    "sl_no": 58,
+    "part_no": 94,
+    "name": "Padmavathamma Inja",
+    "mobile": "9550585878",
+    "total_electors": 963
+  },
+  {
+    "sl_no": 59,
+    "part_no": 59,
+    "name": "A V Premasai Yadav",
+    "mobile": "8106206433",
+    "total_electors": 752
+  },
+  {
+    "sl_no": 60,
+    "part_no": 96,
+    "name": "Chaitanya Krishna Bandaru",
+    "mobile": "7794919380",
+    "total_electors": 965
+  },
+  {
+    "sl_no": 61,
+    "part_no": 151,
+    "name": "Keerthi Krishna Panthagani",
+    "mobile": "7981340870",
+    "total_electors": 1094
+  },
+  {
+    "sl_no": 62,
+    "part_no": 127,
+    "name": "Charan Kumar Korrapati",
+    "mobile": "9492307944",
+    "total_electors": 1115
+  },
+  {
+    "sl_no": 63,
+    "part_no": 131,
+    "name": "Ramadevi Dera",
+    "mobile": "7893780226",
+    "total_electors": 852
+  },
+  {
+    "sl_no": 64,
+    "part_no": 130,
+    "name": "Sunil Balapanoori",
+    "mobile": "9966421856",
+    "total_electors": 876
+  },
+  {
+    "sl_no": 65,
+    "part_no": 189,
+    "name": "Suresh Kumar Jinka",
+    "mobile": "8328002457",
+    "total_electors": 1021
+  },
+  {
+    "sl_no": 66,
+    "part_no": 166,
+    "name": "Saleemmalik Kattubadi",
+    "mobile": "7901550917",
+    "total_electors": 911
+  },
+  {
+    "sl_no": 67,
+    "part_no": 54,
+    "name": "Manohara Kammaiahgari",
+    "mobile": "8886970276",
+    "total_electors": 788
+  },
+  {
+    "sl_no": 68,
+    "part_no": 91,
+    "name": "Vinay Dibbula",
+    "mobile": "7013222120",
+    "total_electors": 789
+  },
+  {
+    "sl_no": 69,
+    "part_no": 71,
+    "name": "Himabundu Bhuthapuri",
+    "mobile": "8247465529",
+    "total_electors": 989
+  },
+  {
+    "sl_no": 70,
+    "part_no": 103,
+    "name": "Meenakshi J",
+    "mobile": "9392774398",
+    "total_electors": 1217
+  },
+  {
+    "sl_no": 71,
+    "part_no": 108,
+    "name": "Davidu Eripotula",
+    "mobile": "9676818269",
+    "total_electors": 571
+  },
+  {
+    "sl_no": 72,
+    "part_no": 72,
+    "name": "Bhuvaneswari Badiginchala",
+    "mobile": "8179330394",
+    "total_electors": 1205
+  },
+  {
+    "sl_no": 73,
+    "part_no": 53,
+    "name": "Bukke Sravan Deepthi",
+    "mobile": "7674967072",
+    "total_electors": 1069
+  },
+  {
+    "sl_no": 74,
+    "part_no": 114,
+    "name": "Rajiya Sulthana Shaik",
+    "mobile": "9642818415",
+    "total_electors": 1328
+  },
+  {
+    "sl_no": 75,
+    "part_no": 60,
+    "name": "Venkata Ramana Yatham",
+    "mobile": "9492902645",
+    "total_electors": 818
+  },
+  {
+    "sl_no": 76,
+    "part_no": 168,
+    "name": "Sireesha Panakanapalli",
+    "mobile": "9849441951",
+    "total_electors": 1129
+  },
+  {
+    "sl_no": 77,
+    "part_no": 139,
+    "name": "Kesava Madhava Kadapa",
+    "mobile": "8688881690",
+    "total_electors": 1234
+  },
+  {
+    "sl_no": 78,
+    "part_no": 180,
+    "name": "Siva Sreekar Reddy Veeramreddy",
+    "mobile": "9494094907",
+    "total_electors": 965
+  },
+  {
+    "sl_no": 79,
+    "part_no": 85,
+    "name": "Shanti Onteru",
+    "mobile": "9391655389",
+    "total_electors": 865
+  },
+  {
+    "sl_no": 80,
+    "part_no": 97,
+    "name": "Swarna Latha Mekala",
+    "mobile": "9494880115",
+    "total_electors": 1160
+  },
+  {
+    "sl_no": 81,
+    "part_no": 157,
+    "name": "Vadla Subramanyam",
+    "mobile": "9676797151",
+    "total_electors": 692
+  },
+  {
+    "sl_no": 82,
+    "part_no": 143,
+    "name": "Gurunath Kattubadi",
+    "mobile": "6305907067",
+    "total_electors": 1296
+  },
+  {
+    "sl_no": 83,
+    "part_no": 77,
+    "name": "Vishnu Vardhan N",
+    "mobile": "6305188099",
+    "total_electors": 526
+  },
+  {
+    "sl_no": 84,
+    "part_no": 84,
+    "name": "Hari Priya Jeereddy",
+    "mobile": "9573323872",
+    "total_electors": 1240
+  },
+  {
+    "sl_no": 85,
+    "part_no": 164,
+    "name": "Babu Rayachoti",
+    "mobile": "9966761395",
+    "total_electors": 788
+  },
+  {
+    "sl_no": 86,
+    "part_no": 178,
+    "name": "Kranthi Swaroop Anandam",
+    "mobile": "9966467952",
+    "total_electors": 964
+  },
+  {
+    "sl_no": 87,
+    "part_no": 83,
+    "name": "Chandra Leela Upparapalli Sripathi",
+    "mobile": "9059507073",
+    "total_electors": 1101
+  },
+  {
+    "sl_no": 88,
+    "part_no": 73,
+    "name": "Peeraiah Katari",
+    "mobile": "8106414374",
+    "total_electors": 833
+  },
+  {
+    "sl_no": 89,
+    "part_no": 148,
+    "name": "Abdulla M",
+    "mobile": "8885628695",
+    "total_electors": 1111
+  },
+  {
+    "sl_no": 90,
+    "part_no": 88,
+    "name": "Anuswathi Rodda",
+    "mobile": "9398570272",
+    "total_electors": 624
+  },
+  {
+    "sl_no": 91,
+    "part_no": 107,
+    "name": "Viswanath Vaddarapu",
+    "mobile": "9491715057",
+    "total_electors": 1147
+  },
+  {
+    "sl_no": 92,
+    "part_no": 86,
+    "name": "Kamal Basha Gali Bhai Gari",
+    "mobile": "6303039291",
+    "total_electors": 853
+  },
+  {
+    "sl_no": 93,
+    "part_no": 134,
+    "name": "Tippaiah Chinta",
+    "mobile": "8096552380",
+    "total_electors": 667
+  },
+  {
+    "sl_no": 94,
+    "part_no": 92,
+    "name": "Venkata Rama Devi Kudumula",
+    "mobile": "9618445840",
+    "total_electors": 742
+  },
+  {
+    "sl_no": 95,
+    "part_no": 98,
+    "name": "Manukinda Nirmala",
+    "mobile": "8333011885",
+    "total_electors": 1044
+  },
+  {
+    "sl_no": 96,
+    "part_no": 117,
+    "name": "Mamatha Kanala",
+    "mobile": "8309655247",
+    "total_electors": 1058
+  },
+  {
+    "sl_no": 97,
+    "part_no": 137,
+    "name": "Bhargavi Kakumani",
+    "mobile": "8019477023",
+    "total_electors": 467
+  },
+  {
+    "sl_no": 98,
+    "part_no": 173,
+    "name": "Sravan Kumar Reddy Challa",
+    "mobile": "8374288196",
+    "total_electors": 1474
+  },
+  {
+    "sl_no": 99,
+    "part_no": 152,
+    "name": "Yunus Hussain Shaik Dadagari",
+    "mobile": "6303783014",
+    "total_electors": 970
+  },
+  {
+    "sl_no": 100,
+    "part_no": 155,
+    "name": "Kumari Lakshmi Deepika Kumari",
+    "mobile": "7671856424",
+    "total_electors": 857
+  },
+  {
+    "sl_no": 101,
+    "part_no": 142,
+    "name": "Jyothirmai Kaipa",
+    "mobile": "6281098662",
+    "total_electors": 1164
+  },
+  {
+    "sl_no": 102,
+    "part_no": 76,
+    "name": "Gandham Amrutha",
+    "mobile": "7093802975",
+    "total_electors": 620
+  },
+  {
+    "sl_no": 103,
+    "part_no": 101,
+    "name": "Jaladurgam Sai Krishna",
+    "mobile": "8328125992",
+    "total_electors": 734
+  },
+  {
+    "sl_no": 104,
+    "part_no": 170,
+    "name": "B Anjaneyudu",
+    "mobile": "9573128487",
+    "total_electors": 752
+  },
+  {
+    "sl_no": 105,
+    "part_no": 122,
+    "name": "Sai Eswar Yennugunda",
+    "mobile": "9030241730",
+    "total_electors": 518
+  },
+  {
+    "sl_no": 106,
+    "part_no": 179,
+    "name": "Jagadeeswar Reddy Gangireddy",
+    "mobile": "8985095150",
+    "total_electors": 906
+  },
+  {
+    "sl_no": 107,
+    "part_no": 132,
+    "name": "Kammara Sailalitha",
+    "mobile": "9703945499",
+    "total_electors": 847
+  },
+  {
+    "sl_no": 108,
+    "part_no": 100,
+    "name": "Hanumanth Naik Mude",
+    "mobile": "9502460959",
+    "total_electors": 846
+  },
+  {
+    "sl_no": 109,
+    "part_no": 95,
+    "name": "Puli Muni Himaja",
+    "mobile": "7981819935",
+    "total_electors": 841
+  },
+  {
+    "sl_no": 110,
+    "part_no": 153,
+    "name": "Babapeer Gudancharla",
+    "mobile": "7981280054",
+    "total_electors": 1146
+  },
+  {
+    "sl_no": 111,
+    "part_no": 55,
+    "name": "Omkar Katam",
+    "mobile": "9703128110",
+    "total_electors": 759
+  },
+  {
+    "sl_no": 112,
+    "part_no": 186,
+    "name": "K Sailaja",
+    "mobile": "6301736729",
+    "total_electors": 722
+  },
+  {
+    "sl_no": 113,
+    "part_no": 68,
+    "name": "Dosakayala Madhavi",
+    "mobile": "7095712946",
+    "total_electors": 785
+  },
+  {
+    "sl_no": 114,
+    "part_no": 102,
+    "name": "Suresh Babu Yengisetti",
+    "mobile": "7702086076",
+    "total_electors": 684
+  },
+  {
+    "sl_no": 115,
+    "part_no": 112,
+    "name": "Gundluru Lalitha",
+    "mobile": "9963267600",
+    "total_electors": 1158
+  },
+  {
+    "sl_no": 116,
+    "part_no": 183,
+    "name": "Mahammad Rafi Middela",
+    "mobile": "7416143494",
+    "total_electors": 1014
+  },
+  {
+    "sl_no": 117,
+    "part_no": 146,
+    "name": "Krishnaveni Korrapati",
+    "mobile": "8309668012",
+    "total_electors": 1447
+  },
+  {
+    "sl_no": 118,
+    "part_no": 156,
+    "name": "C Guru Prasad",
+    "mobile": "8884838300",
+    "total_electors": 730
+  },
+  {
+    "sl_no": 119,
+    "part_no": 176,
+    "name": "Janardhana Reddy Narala",
+    "mobile": "9490307448",
+    "total_electors": 1066
+  },
+  {
+    "sl_no": 120,
+    "part_no": 120,
+    "name": "Swojanya Chimmani",
+    "mobile": "7989830766",
+    "total_electors": 915
+  },
+  {
+    "sl_no": 121,
+    "part_no": 175,
+    "name": "Khasim Bee Enukonda",
+    "mobile": "6300011262",
+    "total_electors": 1181
+  },
+  {
+    "sl_no": 122,
+    "part_no": 147,
+    "name": "Raja Sekhar Tippavathi",
+    "mobile": "7893861010",
+    "total_electors": 1270
+  },
+  {
+    "sl_no": 123,
+    "part_no": 171,
+    "name": "Sivalakshmi Devi Lomada",
+    "mobile": "9032992995",
+    "total_electors": 851
+  },
+  {
+    "sl_no": 124,
+    "part_no": 185,
+    "name": "Hymavathi Uppala",
+    "mobile": "8247896118",
+    "total_electors": 1181
+  },
+  {
+    "sl_no": 125,
+    "part_no": 104,
+    "name": "Udayashri",
+    "mobile": "9550002180",
+    "total_electors": 897
+  },
+  {
+    "sl_no": 126,
+    "part_no": 118,
+    "name": "Nageswari A",
+    "mobile": "8317522721",
+    "total_electors": 965
+  },
+  {
+    "sl_no": 127,
+    "part_no": 169,
+    "name": "Naga Sailaja Jakkam",
+    "mobile": "9494075092",
+    "total_electors": 565
+  },
+  {
+    "sl_no": 128,
+    "part_no": 50,
+    "name": "Nikhitha Badugu",
+    "mobile": "9985901488",
+    "total_electors": 1052
+  },
+  {
+    "sl_no": 129,
+    "part_no": 145,
+    "name": "Babaiah Rupanagudi",
+    "mobile": "9989046729",
+    "total_electors": 1056
+  },
+  {
+    "sl_no": 130,
+    "part_no": 105,
+    "name": "Kamala Kalle",
+    "mobile": "9866137657",
+    "total_electors": 570
+  },
+  {
+    "sl_no": 131,
+    "part_no": 87,
+    "name": "Kaveti Sowjanya",
+    "mobile": "9989467286",
+    "total_electors": 751
+  },
+  {
+    "sl_no": 132,
+    "part_no": 162,
+    "name": "M Naga Kishore",
+    "mobile": "9000409434",
+    "total_electors": 850
+  },
+  {
+    "sl_no": 133,
+    "part_no": 106,
+    "name": "M. Jyothi",
+    "mobile": "9121964682",
+    "total_electors": 657
+  },
+  {
+    "sl_no": 134,
+    "part_no": 65,
+    "name": "Gurulakshmi Devi Bogala",
+    "mobile": "9000668969",
+    "total_electors": 1415
+  },
+  {
+    "sl_no": 135,
+    "part_no": 56,
+    "name": "Bhagyamma Lakineni",
+    "mobile": "9550185227",
+    "total_electors": 758
+  },
+  {
+    "sl_no": 136,
+    "part_no": 57,
+    "name": "Avula Joshna",
+    "mobile": "7893284665",
+    "total_electors": 869
+  },
+  {
+    "sl_no": 137,
+    "part_no": 184,
+    "name": "Vidyavathi Chaaboli",
+    "mobile": "7207960515",
+    "total_electors": 1159
+  },
+  {
+    "sl_no": 138,
+    "part_no": 177,
+    "name": "Vijayalakshmi Devi Cy",
+    "mobile": "8247879825",
+    "total_electors": 792
+  },
+  {
+    "sl_no": 139,
+    "part_no": 63,
+    "name": "Ambati Sushmita",
+    "mobile": "9154437185",
+    "total_electors": 520
+  },
+  {
+    "sl_no": 140,
+    "part_no": 49,
+    "name": "Guru Bharathi M",
+    "mobile": "7207143142",
+    "total_electors": 1194
+  },
+  {
+    "sl_no": 141,
+    "part_no": 111,
+    "name": "Govindureddy Kasireddy",
+    "mobile": "9951983610",
+    "total_electors": 1066
+  }
+]

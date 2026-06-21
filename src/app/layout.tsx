@@ -86,7 +86,7 @@ function CongressTopNav() {
               <NavLink href="/" label="Home" />
               <NavLink href="/search" label="Search" />
               <NavLink href="/browse" label="Directory" />
-              <NavLink href="/photos/URBAN_Mapping report_14.06.26_9.30 PM.pdf" label="BLO Contacts" target="_blank" />
+              <NavLink href="/blo-contacts" label="BLO Contacts" />
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
               <a
