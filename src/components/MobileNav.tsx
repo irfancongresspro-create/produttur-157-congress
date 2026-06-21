@@ -58,6 +58,9 @@ export function MobileNav() {
             <Link href="/browse" onClick={() => setIsOpen(false)} style={{ fontSize: 24, color: 'white', textDecoration: 'none', fontWeight: 600 }}>
               📋 Directory
             </Link>
+            <a href="/photos/URBAN_Mapping report_14.06.26_9.30 PM.pdf" target="_blank" onClick={() => setIsOpen(false)} style={{ fontSize: 24, color: 'white', textDecoration: 'none', fontWeight: 600 }}>
+              📞 BLO Contacts
+            </a>
           </div>
           
           <div style={{ marginTop: 'auto', padding: '32px 24px', textAlign: 'center', color: '#64748b', fontSize: 13 }}>
