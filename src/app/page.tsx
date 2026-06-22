@@ -3,8 +3,8 @@ import { CongressHero } from '@/components/CongressHero'
 import HomeSearchClient from './HomeSearchClient'
 
 export const metadata: Metadata = {
-  title: 'Produttur 157 Congress Voter Search | ప్రొద్దుటూరు నియోజకవర్గం',
-  description: 'Search 2,14,168 registered voters in Produttur Assembly Constituency 157, Kadapa District, Andhra Pradesh. Indian National Congress official voter portal.',
+  title: 'Proddatur 157 Congress Voter Search | ప్రొద్దుటూరు నియోజకవర్గం',
+  description: 'Search 2,14,168 registered voters in Proddatur Assembly Constituency 157, Kadapa District, Andhra Pradesh. Indian National Congress official voter portal.',
 }
 
 export default function HomePage() {
@@ -36,7 +36,7 @@ export default function HomePage() {
             textShadow: '0 4px 24px rgba(0,0,0,0.6)',
             letterSpacing: '-0.5px'
           }}>
-            Produttur Constituency
+            Proddatur Constituency
           </h1>
 
           <div className="inc-flag-badge" style={{ marginBottom: 20, display: 'inline-flex' }}>
@@ -66,7 +66,7 @@ export default function HomePage() {
 
         <div style={{ textAlign: 'center', marginBottom: 36 }}>
           <p style={{ fontSize: 'clamp(14px, 1.5vw, 18px)', color: '#94a3b8', maxWidth: 600, margin: '0 auto', lineHeight: 1.6 }}>
-            Find any voter in Produttur 157 by name, EPIC ID, or door number — supports Telugu & English
+            Find any voter in Proddatur 157 by name, EPIC ID, or door number — supports Telugu & English
           </p>
         </div>
 
@@ -138,7 +138,7 @@ export default function HomePage() {
             జై కాంగ్రెస్! 🇮🇳
           </h3>
           <p style={{ color: '#94a3b8', fontSize: 15, marginBottom: 24 }}>
-            Produttur Constituency 157 — Serving every voter, building a stronger democracy
+            Proddatur Constituency 157 — Serving every voter, building a stronger democracy
           </p>
           <a href="/search" style={{
             display: 'inline-flex', alignItems: 'center', gap: 10,

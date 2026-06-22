@@ -64,7 +64,7 @@ export function MobileNav() {
           </div>
           
           <div style={{ marginTop: 'auto', padding: '32px 24px', textAlign: 'center', color: '#64748b', fontSize: 13 }}>
-            Indian National Congress<br/>Produttur 157
+            Indian National Congress<br/>Proddatur 157
           </div>
         </div>,
         document.body

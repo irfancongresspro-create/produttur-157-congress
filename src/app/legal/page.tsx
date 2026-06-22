@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Legal Disclaimer | Produttur 157 Congress Voter Search',
+  title: 'Legal Disclaimer | Proddatur 157 Congress Voter Search',
   description: 'Legal disclaimer and terms of use for the independent public-service platform checkSIR.com.',
 }
 

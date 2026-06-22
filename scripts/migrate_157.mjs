@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * ============================================================
- * CONGRESS PRODUTTUR 157 — DATA MIGRATION SCRIPT
+ * CONGRESS PRODDATUR 157 — DATA MIGRATION SCRIPT
  * ============================================================
  * Migrates assembly_no=157 voter data from the existing SIR-AP
  * Supabase project to the new Congress-dedicated Supabase project.
@@ -161,11 +161,11 @@ async function verifyMigration() {
 // MAIN
 // ============================================================
 async function main() {
-  console.log('🚀 Congress Produttur 157 — Migration Script')
+  console.log('🚀 Congress Proddatur 157 — Migration Script')
   console.log('============================================')
   console.log(`Source: ${SOURCE_URL}`)
   console.log(`Target: ${TARGET_URL}`)
-  console.log(`Assembly: ${ASSEMBLY_NO} (Produttur)`)
+  console.log(`Assembly: ${ASSEMBLY_NO} (Proddatur)`)
   console.log(`Batch size: ${BATCH_SIZE} rows`)
   console.log('')
   console.log('⚠️  NOTE: Run scripts/setup_supabase.sql FIRST in the target Supabase SQL editor!')

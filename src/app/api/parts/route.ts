@@ -22,11 +22,11 @@ export async function GET() {
   const assemblies = [
     {
       assembly_no: 157,
-      assembly_name: parts[0]?.assembly_name || 'Produttur',
+      assembly_name: parts[0]?.assembly_name || 'Proddatur',
       parts: parts.map(p => ({
         id: `157-${p.part_no}`,
         assembly_no: 157,
-        assembly_name: p.assembly_name || 'Produttur',
+        assembly_name: p.assembly_name || 'Proddatur',
         part_no: p.part_no,
         polling_station_no: p.polling_station_no,
         polling_station_name: p.polling_station_name,

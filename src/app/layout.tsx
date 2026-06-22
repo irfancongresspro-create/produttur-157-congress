@@ -10,9 +10,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Produttur 157 Congress — Voter Search | ప్రొద్దుటూరు నియోజకవర్గం',
-  description: 'Search voter lists for Produttur Assembly Constituency 157, Kadapa District. Find any voter by name, EPIC ID, or house number. Powered by Indian National Congress.',
-  keywords: 'Produttur, 157, voter list, Congress, Kadapa, ప్రొద్దుటూరు, voter search, APCC',
+  title: 'Proddatur 157 Congress — Voter Search | ప్రొద్దుటూరు నియోజకవర్గం',
+  description: 'Search voter lists for Proddatur Assembly Constituency 157, Kadapa District. Find any voter by name, EPIC ID, or house number. Powered by Indian National Congress.',
+  keywords: 'Proddatur, 157, voter list, Congress, Kadapa, ప్రొద్దుటూరు, voter search, APCC',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -71,7 +71,7 @@ function CongressTopNav() {
               </div>
               <div>
                 <div style={{ fontWeight: 800, fontSize: 15, color: '#FF9933', letterSpacing: '-0.3px' }}>
-                  Produttur Voter Search
+                  Proddatur Voter Search
                 </div>
                 <div className="hidden sm:block" style={{ fontSize: 11, color: '#64748b', marginTop: 1 }}>
                   INC Official Directory

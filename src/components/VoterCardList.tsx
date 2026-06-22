@@ -101,7 +101,7 @@ function VoterCard({ voter, onViewFamily }: { voter: Voter; onViewFamily: () => 
 
       {/* Location */}
       <div style={{ marginTop: 10, fontSize: 12, color: '#64748b', display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-        <span>📍 Produttur 157</span>
+        <span>📍 Proddatur 157</span>
         <span>📋 Part {voter.part_no}</span>
         <span>🔢 S.No: {voter.serial_no}</span>
       </div>

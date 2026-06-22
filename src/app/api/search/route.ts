@@ -8,7 +8,7 @@ import Sanscript from '@indic-transliteration/sanscript'
 export const runtime = 'nodejs'
 
 // ============================================================
-// CONGRESS PRODUTTUR 157 — SEARCH API
+// CONGRESS PRODDATUR 157 — SEARCH API
 // ✅ NO rate limiting (unlimited searches for campaign workers)
 // ✅ HARD-LOCKED to assembly_no = 157
 // ✅ Same AI search logic as SIR-AP parent platform

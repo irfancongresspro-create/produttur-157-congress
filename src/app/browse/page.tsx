@@ -57,7 +57,7 @@ export default function BrowsePage() {
               📋 Voter Directory
             </h1>
             <p style={{ color: '#94a3b8', fontSize: 14 }}>
-              Browse the complete electoral roll for Produttur 157 by Part Number.
+              Browse the complete electoral roll for Proddatur 157 by Part Number.
             </p>
           </div>
 
